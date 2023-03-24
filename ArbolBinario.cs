@@ -1,10 +1,8 @@
 ﻿using System;
 
-namespace tp1
+namespace TP1
 {
 	public class ArbolBinario<T>
-	{
-		
 	{
 		private T dato;
 		private ArbolBinario<T> hijoIzquierdo;
