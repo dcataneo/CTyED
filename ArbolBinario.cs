@@ -4,6 +4,8 @@ namespace TP1
 {
 	public class ArbolBinario<T>
 	{
+	
+
 		private T dato;
 		private ArbolBinario<T> hijoIzquierdo;
 		private ArbolBinario<T> hijoDerecho;

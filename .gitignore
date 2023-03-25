@@ -1,0 +1,6 @@
+.vscode
+/bin
+/obj
+.emv
+Program.cs
+TP1.csproj
