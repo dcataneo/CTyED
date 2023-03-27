@@ -1,14 +1,13 @@
 ﻿using System;
 
-namespace TP1
+namespace tp1
 {
 	public class ArbolBinario<T>
 	{
-	
-
+		
 		private T dato;
-		private ArbolBinario<T> hijoIzquierdo;
-		private ArbolBinario<T> hijoDerecho;
+		private ArbolBinario<T>? hijoIzquierdo;
+		private ArbolBinario<T>? hijoDerecho;
 	
 		
 		public ArbolBinario(T dato) {
@@ -19,11 +18,11 @@ namespace TP1
 			return this.dato;
 		}
 	
-		public ArbolBinario<T> getHijoIzquierdo() {
+		public ArbolBinario<T>? getHijoIzquierdo() {
 			return this.hijoIzquierdo;
 		}
 	
-		public ArbolBinario<T> getHijoDerecho() {
+		public ArbolBinario<T>? getHijoDerecho() {
 			return this.hijoDerecho;
 		}
 	
@@ -51,6 +50,11 @@ namespace TP1
 		}
 		
 		public void preorden() {
+			Console.Write(dato + " - ");
+			if (hijoIzquierdo != null)
+				hijoIzquierdo.preorden();
+			if (hijoDerecho != null)
+				hijoDerecho.preorden();
 		}
 		
 		public void postorden() {
