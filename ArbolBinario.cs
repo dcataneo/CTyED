@@ -71,7 +71,7 @@ namespace tp1
 				hijoDerecho.postorden();
 			Console.Write(dato + " ");
 			if (dato.incluye() == true)
-				Console.Write("Se encontro igualdad con el dato: " + dato)
+				Console.Write("Se encontro igualdad con el dato: " + dato);
 		}
 		
 		public void recorridoPorNiveles() {
@@ -84,14 +84,7 @@ namespace tp1
 		public void recorridoEntreNiveles(int n,int m) {
 		}
 
-		public void incluye(int elemento) {
-			if (elemento == dato)
-				return true;
-			else
-			{
-				return false;
-			}
-
+		public void incluye() {
 		}
 	}
 }
