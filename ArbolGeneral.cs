@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace tp1
+namespace tp2
 {
 	public class ArbolGeneral<T>
 	{
